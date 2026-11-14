@@ -1,0 +1,14 @@
+# VeloTech LifeCourse-360: Streamlit settings.
+# The base theme is fixed to "light" so native widgets render predictably; the app's own
+# Color theme + Light/Dark controls re-skin everything on top of it (the primary colour below is
+# the reference that native slider fills are hue-shifted from).
+[theme]
+base = "light"
+primaryColor = "#0F766E"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

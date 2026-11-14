@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "VeloTech LifeCourse-360: Streamlit (Run & Debug)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app.py", "--server.port", "8501", "--server.headless", "true"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "VELOTECH_LLM_MODE": "offline",
+        "VELOTECH_TRACE_STDOUT": "1"
+      },
+      "justMyCode": true,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "VeloTech: MCP Server (stdio)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/mcp_server.py",
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}" },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "VeloTech: 4-Agent Swarm smoke test",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.foundry_agents",
+      "cwd": "${workspaceFolder}",
+      "env": { "PYTHONPATH": "${workspaceFolder}", "VELOTECH_TRACE_STDOUT": "1" },
+      "console": "integratedTerminal"
+    }
+  ]
+}

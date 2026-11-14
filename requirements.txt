@@ -1,0 +1,10 @@
+streamlit>=1.40.0
+numpy>=1.26.0
+pandas>=2.1.0
+scikit-learn>=1.4.0
+opencv-python-headless>=4.9.0.80,<5
+plotly>=5.20.0
+networkx>=3.2
+# Optional (all features run offline without these):
+# mcp>=1.2.0              # real Model Context Protocol / FastMCP transport for src/mcp_server.py
+# fairlearn>=0.10.0       # if installed, used to cross-check built-in parity metrics
